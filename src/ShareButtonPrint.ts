@@ -7,6 +7,6 @@ export default class ShareButtonPrint extends AbstractShareButton {
   }
 
   createAction(): any {
-    return window.print();
+    return () => window.print();
   }
 }
